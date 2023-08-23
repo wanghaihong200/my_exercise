@@ -1,47 +1,41 @@
-package cn.itcast.order.pojo;
-
+package cn.itcast.nacos.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * 
- * @TableName tb_order
+ * @TableName tb_user
  */
-@TableName(value ="tb_order")
+@TableName(value ="tb_user")
 @Data
-public class TbOrder implements Serializable {
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class TbUser implements Serializable {
     /**
-     * 订单id
+     * 
      */
     @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
-     * 用户id
+     * 收件人
      */
-    private Long userId;
+    private String username;
 
     /**
-     * 商品名称
+     * 地址
      */
-    private String name;
-
-    /**
-     * 商品价格
-     */
-    private Long price;
-
-    /**
-     * 商品数量
-     */
-    private Integer num;
-
-    //private User user;
+    private String address;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

@@ -1,19 +1,30 @@
 server:
   port: 8088
 spring:
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.204.145:3315/cloud?characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
-    password: root
-    username: root
-    tomcat:
-      max-active: 50
-      min-idle: 20
+    # 数据库动态配置
+    dynamic:
+      primary: cloud # 配置默认数据库
+      datasource:
+        cloud:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://192.168.204.145:3315/cloud?characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+          password: root
+          username: root
 
-mybatis:
-  type-aliases-package: cn.itcast.user.pojo
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/**/*.xml
+  #  实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: cn.itcast.order.pojo
+  # 是否执行MyBatis xml配置文件的状态检查, 只是检查状态
+  check-config-location: true
   configuration:
+    # 下划线转驼峰配置
     map-underscore-to-camel-case: true
+    # 开启 MyBatisPlus日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 logging:
   level:
     cn.itcast: debug

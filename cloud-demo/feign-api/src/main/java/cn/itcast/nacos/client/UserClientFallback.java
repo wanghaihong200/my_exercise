@@ -1,6 +1,6 @@
 package cn.itcast.nacos.client;
 
-import cn.itcast.nacos.pojo.User;
+import cn.itcast.nacos.pojo.TbUser;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserClientFallback implements UserClient {
     @Override
-    public User findById(Long id) {
-        return User.builder().
+    public TbUser queryById(Long id) {
+        return TbUser.builder().
                 id(10L).
                 username("默认用户").
                 address("默认地址").

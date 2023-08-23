@@ -25,7 +25,7 @@ public class OrderController {
     public TbOrder queryOrderByUserId(@PathVariable("orderId") Long orderId) {
         // 根据id查询订单并返回
         TbOrder order = orderService.queryOrder(orderId);
-        String user = JSON.toJSONString(userClient.findById(order.getUserId()));
+        String user = JSON.toJSONString(userClient.queryById(order.getUserId()));
         System.out.println(user);
         return order;
     }

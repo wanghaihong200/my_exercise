@@ -1,5 +1,4 @@
-package cn.itcast.order.pojo;
-
+package cn.itcast.user.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -10,38 +9,26 @@ import lombok.Data;
 
 /**
  * 
- * @TableName tb_order
+ * @TableName tb_user
  */
-@TableName(value ="tb_order")
+@TableName(value ="tb_user")
 @Data
-public class TbOrder implements Serializable {
+public class TbUser implements Serializable {
     /**
-     * 订单id
+     * 
      */
     @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
-     * 用户id
+     * 收件人
      */
-    private Long userId;
+    private String username;
 
     /**
-     * 商品名称
+     * 地址
      */
-    private String name;
-
-    /**
-     * 商品价格
-     */
-    private Long price;
-
-    /**
-     * 商品数量
-     */
-    private Integer num;
-
-    //private User user;
+    private String address;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
