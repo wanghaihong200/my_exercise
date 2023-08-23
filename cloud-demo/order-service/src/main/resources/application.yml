@@ -1,0 +1,71 @@
+server:
+  port: 8087
+  compression:
+    enabled: true #开启gzip压缩
+spring:
+  application:
+    name: orderservice
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+  datasource:
+    # 数据库动态配置
+    dynamic:
+      primary: cloud # 配置默认数据库
+      datasource:
+        cloud:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://192.168.204.145:3315/cloud?characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+          password: root
+          username: root
+
+  cloud:
+    nacos:
+      server-addr: http://192.168.204.145:8849 # nacos服务地址 ，管理台页面： http://192.168.204.132:8849/nacos
+#      server-addr: nacos8849:8849
+      discovery:
+        cluster-name: HZ  # 划分集群
+        namespace: d31175f7-125a-49d0-bf5c-c7e74e547eaf # dev环境
+        ephemeral: false # 是否是临时实例
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/**/*.xml
+  #  实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: cn.itcast.order.pojo
+  # 是否执行MyBatis xml配置文件的状态检查, 只是检查状态
+  check-config-location: true
+  configuration:
+    # 下划线转驼峰配置
+    map-underscore-to-camel-case: true
+    # 开启 MyBatisPlus日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+#eureka:
+#  client:
+#    service-url:
+#        defaultZone: http://127.0.0.1:10086/eureka
+
+userservice:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则: 根据同集群优先来实现负载均衡
+
+feign:
+  client:
+    config:
+      userservice:
+        connectTimeout: 5000
+        readTimeout: 5000
+        logger-level: full # feign日志级别
+  httpclient:
+    enabled: true # 开启feign对HttpClient的支持
+    max-connections: 200 # 最大连接数
+    max-connections-per-route: 50 # 单个路径的最大连接数
+  hystrix:
+    enabled: true # 开启feign对Hystrix的支持

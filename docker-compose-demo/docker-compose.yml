@@ -1,0 +1,21 @@
+version: "3.2"
+
+services:
+  gateway:
+    build:
+        context: ./gateway
+    ports:
+        - "10010:10010"
+  userservice:
+    build:
+        context: ./user-service
+    ports:
+      - "8088:8088"
+
+  orderservice:
+    build:
+        context: ./order-service
+    ports:
+      - "8087:8087"
+
+# 执行命令：docker-compose up -d

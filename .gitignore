@@ -1,0 +1,3 @@
+# Project exclude paths
+/cloud-demo/order-service/target/
+/cloud-demo/user-service/target/

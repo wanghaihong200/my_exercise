@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: userservice # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev, `${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}`作为文件id，来读取配置
+  cloud:
+    nacos:
+      server-addr: http://192.168.204.145:8849 # nacos服务地址
+#      server-addr: nacos8849:8849
+      discovery:
+        cluster-name: HZ  # 划分集群
+        namespace: d31175f7-125a-49d0-bf5c-c7e74e547eaf # dev环境
+        ephemeral: false # 是否是临时实例
+      config:
+        file-extension: yaml # 文件后缀名
+        namespace: d31175f7-125a-49d0-bf5c-c7e74e547eaf # dev环境
+        shared-configs: # 共享配置
+          - dataId: common.yaml # 共享配置的dataId
+#            group: dev # 共享配置的分组
+            refresh: true # 是否刷新
