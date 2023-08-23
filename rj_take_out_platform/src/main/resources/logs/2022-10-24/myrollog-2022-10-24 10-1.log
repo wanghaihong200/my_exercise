@@ -1,0 +1,92 @@
+2022-10-24 10:28:10.377 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 10:28:10.609 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - Starting SpringbootLearnApplication using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 10548 (D:\java_study\springboot-learn\target\classes started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 10:28:10.614 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - The following 1 profile is active: "dev"
+2022-10-24 10:28:10.697 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-24 10:28:10.697 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-24 10:28:12.052 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:28:12.054 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$dfd216d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:28:12.069 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:28:12.449 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer  - Tomcat initialized with port(s): 8080 (http)
+2022-10-24 10:28:12.457 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-24 10:28:12.457 [restartedMain] INFO  org.apache.catalina.core.StandardService  - Starting service [Tomcat]
+2022-10-24 10:28:12.457 [restartedMain] INFO  org.apache.catalina.core.StandardEngine  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-24 10:28:12.529 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2022-10-24 10:28:12.530 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext  - Root WebApplicationContext: initialization completed in 1831 ms
+2022-10-24 10:28:12.753 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 10:28:12.757 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 10:28:12.761 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 10:28:12.764 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 10:28:12.766 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 10:28:12.770 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 10:28:12.772 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 10:28:12.773 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 10:28:12.773 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 10:28:12.773 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 10:28:13.778 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer  - LiveReload server is running on port 35729
+2022-10-24 10:28:13.976 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-10-24 10:28:13.991 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-24 10:28:14.155 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - Started SpringbootLearnApplication in 5.245 seconds (JVM running for 7.254)
+2022-10-24 10:28:14.158 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - 应用启动开始。。。。
+2022-10-24 10:31:27.690 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-24 10:31:27.690 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcherServlet'
+2022-10-24 10:31:27.692 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet  - Completed initialization in 2 ms
+2022-10-24 10:31:27.835 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver  - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'password': rejected value [null]; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [密码不能为空]]
+2022-10-24 10:37:35.667 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 10:37:35.670 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 10:37:35.670 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 10:37:35.670 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 10:37:35.671 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 10:37:42.059 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 10:37:42.242 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - Starting SpringbootLearnApplication using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 19732 (D:\java_study\springboot-learn\target\classes started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 10:37:42.246 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - The following 1 profile is active: "dev"
+2022-10-24 10:37:42.295 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-24 10:37:42.295 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-24 10:37:43.408 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:37:43.410 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$f0a6e194] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:37:43.431 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:37:43.804 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer  - Tomcat initialized with port(s): 8080 (http)
+2022-10-24 10:37:43.812 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-24 10:37:43.812 [restartedMain] INFO  org.apache.catalina.core.StandardService  - Starting service [Tomcat]
+2022-10-24 10:37:43.813 [restartedMain] INFO  org.apache.catalina.core.StandardEngine  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-24 10:37:43.888 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2022-10-24 10:37:43.889 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext  - Root WebApplicationContext: initialization completed in 1592 ms
+2022-10-24 10:37:44.098 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 10:37:44.101 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 10:37:44.105 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 10:37:44.108 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 10:37:44.111 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 10:37:44.115 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 10:37:44.118 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 10:37:44.119 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 10:37:44.120 [restartedMain] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 10:37:45.256 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer  - LiveReload server is running on port 35729
+2022-10-24 10:37:45.458 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-10-24 10:37:45.474 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-24 10:37:45.658 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - Started SpringbootLearnApplication in 4.007 seconds (JVM running for 5.423)
+2022-10-24 10:37:45.660 [restartedMain] INFO  com.example.springbootlearn.RjTakeOutPlatformApplication  - 应用启动开始。。。。
+2022-10-24 10:38:34.569 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-24 10:38:34.569 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcherServlet'
+2022-10-24 10:38:34.571 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet  - Completed initialization in 2 ms
+2022-10-24 10:38:34.761 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver  - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'user' on field 'password': rejected value [null]; codes [NotBlank.user.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password]]; default message [密码不能为空]]

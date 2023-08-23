@@ -1,0 +1,647 @@
+2022-10-24 15:06:54.266 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:06:54.276 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:06:54.278 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:06:54.420 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:06:54.658 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:06:54.679 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7f6f61c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ccb4b1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4097cac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec2cc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5b3fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1e2a2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@710b18a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@119020fb]
+2022-10-24 15:06:55.068 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:06:55.076 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:06:55.092 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 14584 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:06:55.095 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:06:56.543 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:06:56.546 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:06:56.585 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:06:57.347 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:06:57.353 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$677efec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:06:57.379 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:06:57.854 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:06:57.859 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:06:57.863 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:06:57.868 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:06:57.871 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:06:57.876 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:06:57.881 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:06:57.883 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:06:57.883 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:06:57.883 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:06:57.883 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:06:57.883 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:06:57.884 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:06:57.884 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:06:57.884 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:07:02.031 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 7.308 seconds (JVM running for 9.533)
+2022-10-24 15:07:02.473 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:07:02.478 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:07:02.479 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:07:02.479 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:07:02.479 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:07:02.480 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:07:02.481 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:07:02.481 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:07:02.481 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:07:02.481 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:08:14.892 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:08:14.906 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:08:14.907 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:08:15.081 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:08:15.383 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:08:15.403 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61ce23ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3668d4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1c3b9394, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f2cfcc2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7f6f61c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c2cc639, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ccb4b1b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4097cac, org.springframework.test.context.event.EventPublishingTestExecutionListener@ec2cc4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a5b3fee, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c1e2a2d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2cc3ad05]
+2022-10-24 15:08:15.800 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:08:15.807 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:08:15.825 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 1680 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:08:15.829 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:08:17.215 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:08:17.222 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:08:17.265 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:08:17.993 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:08:18.001 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$1e9022af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:08:18.031 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:08:18.541 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:08:18.547 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:08:18.551 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:08:18.555 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:08:18.559 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:08:18.565 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:08:18.569 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:08:18.571 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:08:18.571 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:08:18.572 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:08:23.842 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 8.389 seconds (JVM running for 10.629)
+2022-10-24 15:08:24.246 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:08:24.250 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:08:24.251 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:08:24.251 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:08:24.251 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:08:24.252 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:08:24.253 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:08:24.253 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:08:24.253 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:08:24.253 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:08:24.253 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:12:47.785 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:12:47.796 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:12:47.796 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:12:47.940 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:12:48.147 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:12:48.166 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7f6f61c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ccb4b1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4097cac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec2cc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5b3fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1e2a2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@710b18a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@119020fb]
+2022-10-24 15:12:48.727 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:12:48.775 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:12:48.800 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 22092 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:12:48.803 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:12:50.475 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:12:50.479 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:12:50.515 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:12:51.340 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:12:51.350 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$677efec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:12:51.384 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:12:51.984 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:12:51.992 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:12:51.998 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:12:52.004 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:12:52.011 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:12:52.017 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:12:52.023 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:12:52.028 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:12:56.775 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 8.56 seconds (JVM running for 10.408)
+2022-10-24 15:12:57.195 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:12:57.198 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:12:57.199 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:12:57.199 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:12:57.200 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:12:57.201 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:12:57.201 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:12:57.201 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:12:57.201 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:12:57.201 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:17:26.345 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:17:26.367 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:17:26.369 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:17:26.684 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:17:27.176 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:17:27.199 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7f6f61c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ccb4b1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4097cac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec2cc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5b3fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1e2a2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@710b18a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@119020fb]
+2022-10-24 15:17:27.683 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:17:27.693 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:17:27.712 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 27448 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:17:27.715 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:17:29.159 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:17:29.163 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:17:29.202 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:17:29.984 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:29.996 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9af6c859] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:30.038 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:30.598 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:17:30.603 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:17:30.608 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:17:30.612 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:17:30.617 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:17:30.622 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:17:30.626 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:17:30.630 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.lang.String com.example.springbootlearn.util.JedisUtil.envProfileActive
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.nameList
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryFactor
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryGather
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryReceive
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.bjRedis
+2022-10-24 15:17:31.800 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.localRedis
+2022-10-24 15:17:36.069 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 8.813 seconds (JVM running for 12.582)
+2022-10-24 15:17:36.482 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:17:36.486 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:17:36.487 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:17:36.488 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:17:36.489 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:17:36.490 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:17:55.040 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:17:55.051 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:17:55.052 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:17:55.210 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:17:55.467 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:17:55.487 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7f6f61c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ccb4b1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4097cac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec2cc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5b3fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1e2a2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@710b18a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@119020fb]
+2022-10-24 15:17:55.872 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:17:55.881 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:17:55.898 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 23856 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:17:55.901 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:17:57.346 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:17:57.350 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:17:57.382 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:17:58.137 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:58.146 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$194e5950] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:58.181 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:17:58.662 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:17:58.670 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:17:58.674 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:17:58.680 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:17:58.686 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:17:58.689 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:17:58.694 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:17:58.698 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:17:58.699 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:17:59.726 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.lang.String com.example.springbootlearn.util.JedisUtil.envProfileActive
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.nameList
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryFactor
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryGather
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryReceive
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.bjRedis
+2022-10-24 15:17:59.727 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.localRedis
+2022-10-24 15:18:02.960 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 7.422 seconds (JVM running for 9.27)
+2022-10-24 15:18:03.405 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:18:03.410 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:18:03.411 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:18:03.411 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:18:03.411 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:18:03.411 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:18:03.411 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:18:03.412 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:18:03.412 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:18:03.412 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:18:03.412 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:18:03.412 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:18:03.413 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:18:03.413 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:18:03.413 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:18:03.413 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:19:00.821 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:19:00.836 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:19:00.837 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:19:01.020 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:19:01.283 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:19:01.303 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61ce23ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3668d4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1c3b9394, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f2cfcc2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7f6f61c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c2cc639, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ccb4b1b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4097cac, org.springframework.test.context.event.EventPublishingTestExecutionListener@ec2cc4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a5b3fee, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c1e2a2d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2cc3ad05]
+2022-10-24 15:19:01.686 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:19:01.695 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:19:01.710 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 10520 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:19:01.713 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:19:03.107 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:19:03.111 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:19:03.145 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:19:03.927 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:19:03.939 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$677efec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:19:03.980 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:19:04.508 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:19:04.515 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:19:04.519 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:19:04.523 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:19:04.530 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:19:04.533 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:19:04.539 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:19:04.543 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.lang.String com.example.springbootlearn.util.JedisUtil.envProfileActive
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.nameList
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryFactor
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryGather
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.galleryReceive
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.bjRedis
+2022-10-24 15:19:05.606 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor  - Autowired annotation is not supported on static fields: private static java.util.List com.example.springbootlearn.util.JedisUtil.localRedis
+2022-10-24 15:19:09.049 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Started SpringbootLearnApplicationTests in 7.664 seconds (JVM running for 9.851)
+2022-10-24 15:19:10.378 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:19:10.386 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:19:10.391 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:19:10.392 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:19:10.393 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:19:10.395 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:19:10.395 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:19:10.396 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:19:10.396 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:19:10.396 [SpringApplicationShutdownHook] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:26:33.768 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:26:33.799 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:26:33.801 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:26:34.140 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:30:52.195 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests], using SpringBootContextLoader
+2022-10-24 15:30:52.204 [main] INFO  org.springframework.test.context.support.AbstractContextLoader  - Could not detect default resource locations for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-10-24 15:30:52.205 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils  - Could not detect default configuration classes for test class [com.example.springbootlearn.RjTakeOutPlatformApplicationTests]: SpringbootLearnApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-10-24 15:30:52.327 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Found @SpringBootConfiguration com.example.springbootlearn.RjTakeOutPlatformApplication for test class com.example.springbootlearn.RjTakeOutPlatformApplicationTests
+2022-10-24 15:30:52.495 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-10-24 15:30:52.514 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f2cfcc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7f6f61c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c2cc639, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ccb4b1b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4097cac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec2cc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5b3fee, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c1e2a2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@333dd51e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d645b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2101b44a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cc3ad05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@710b18a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@119020fb]
+2022-10-24 15:30:52.799 [background-preinit] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.2.5.Final
+2022-10-24 15:30:52.809 [main] WARN  org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer  - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/E:/maven/repostory/org/json/json/20211205/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/E:/maven/repostory/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-10-24 15:30:52.820 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - Starting SpringbootLearnApplicationTests using Java 1.8.0_291 on WINDOWS-9R8SLG4 with PID 13712 (started by TCLDUSER in D:\java_study\springboot-learn)
+2022-10-24 15:30:52.822 [main] INFO  com.example.springbootlearn.RjTakeOutPlatformApplicationTests  - The following 1 profile is active: "dev"
+2022-10-24 15:30:54.058 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-24 15:30:54.061 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-24 15:30:54.098 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-10-24 15:30:55.294 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:30:55.308 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$194e5950] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:30:55.379 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 15:30:56.524 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1,fraud} inited
+2022-10-24 15:30:56.632 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2,tcrcMarketing} inited
+2022-10-24 15:30:56.651 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3,tcrcNamelist} inited
+2022-10-24 15:30:56.661 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4,tcrcriskPlatform} inited
+2022-10-24 15:30:56.670 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5,tcrcStorageData} inited
+2022-10-24 15:30:56.678 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6,tcrcTatisticsData} inited
+2022-10-24 15:30:56.686 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7,ice} inited
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcTatisticsData] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [fraud] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcriskPlatform] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [ice] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcMarketing] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcNamelist] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource - add a datasource named [tcrcStorageData] success
+2022-10-24 15:30:56.691 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource initial loaded [7] datasource,primary datasource named [fraud]
+2022-10-24 15:30:58.410 [main] WARN  org.springframework.web.context.support.GenericWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jedis.nameList' in value "${jedis.nameList}"
+2022-10-24 15:30:58.411 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource start closing ....
+2022-10-24 15:30:58.415 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closing ...
+2022-10-24 15:30:58.416 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-6} closed
+2022-10-24 15:30:58.416 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closing ...
+2022-10-24 15:30:58.417 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2022-10-24 15:30:58.417 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closing ...
+2022-10-24 15:30:58.417 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} closed
+2022-10-24 15:30:58.417 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closing ...
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-7} closed
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closing ...
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closing ...
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closing ...
+2022-10-24 15:30:58.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-5} closed
+2022-10-24 15:30:58.418 [main] INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource  - dynamic-datasource all closed success,bye
+2022-10-24 15:30:58.437 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-24 15:30:58.477 [main] ERROR org.springframework.boot.SpringApplication  - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jedis.nameList' in value "${jedis.nameList}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_291]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_291]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_291]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_291]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_291]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:1.8.0_291]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[?:1.8.0_291]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[?:1.8.0_291]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_291]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[?:1.8.0_291]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_291]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_291]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jedis.nameList' in value "${jedis.nameList}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 87 more
+2022-10-24 15:30:58.479 [main] ERROR org.springframework.test.context.TestContextManager  - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@1c3b9394] to prepare test instance [com.example.springbootlearn.RjTakeOutPlatformApplicationTests@56a05324]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_291]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_291]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[?:1.8.0_291]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_291]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_291]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[?:1.8.0_291]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[?:1.8.0_291]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[?:1.8.0_291]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[?:1.8.0_291]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[?:1.8.0_291]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_291]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[?:1.8.0_291]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jedis.nameList' in value "${jedis.nameList}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.23.jar:5.3.23]
+	... 71 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jedis.nameList' in value "${jedis.nameList}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.4.jar:2.7.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.23.jar:5.3.23]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.23.jar:5.3.23]
+	... 71 more
