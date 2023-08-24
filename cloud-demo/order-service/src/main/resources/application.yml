@@ -69,3 +69,5 @@ feign:
     max-connections-per-route: 50 # 单个路径的最大连接数
   hystrix:
     enabled: true # 开启feign对Hystrix的支持
+  sentinel:
+    enabled: true # 开启feign对Sentinel的支持

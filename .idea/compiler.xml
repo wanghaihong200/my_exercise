@@ -7,22 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="order-service" />
         <module name="user-service" />
+        <module name="storage-service" />
+        <module name="account-service" />
         <module name="eureka-server" />
+        <module name="order-service (1)" />
         <module name="feign-api" />
         <module name="gateway" />
+        <module name="order-service (2)" />
         <module name="springboot-learn" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="order-service (1)" options="-parameters" />
+      <module name="order-service (2)" options="-parameters" />
       <module name="springboot-learn" options="-parameters" />
+      <module name="storage-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

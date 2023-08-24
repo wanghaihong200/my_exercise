@@ -1,5 +1,6 @@
 package cn.itcast.nacos.client;
 
+import cn.itcast.nacos.client.fallback.UserClientFallbackFactory;
 import cn.itcast.nacos.pojo.TbUser;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @create: 2023-08-07 16:37
  */
 @FeignClient(name ="userservice", // 服务提供者的名称
-        fallback = UserClientFallback.class
+        fallbackFactory = UserClientFallbackFactory.class
 )
 public interface UserClient {
     @GetMapping(path="/user/{id}")

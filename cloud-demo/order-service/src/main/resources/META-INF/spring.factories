@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cn.itcast.nacos.client.UserClientFallback
+cn.itcast.nacos.client.fallback.UserClientFallbackFactory
