@@ -11,8 +11,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @MapperScan("cn.itcast.order.mapper")
 @EnableFeignClients
 @SpringBootApplication
-public class OrderApplication {
+public class SeataOrderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(OrderApplication.class, args);
+        SpringApplication.run(SeataOrderApplication.class, args);
     }
 }
