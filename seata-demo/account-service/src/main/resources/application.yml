@@ -28,7 +28,7 @@ seata:
   service:
     vgroup-mapping: # 事务组与TC服务cluster的映射关系
       seata-demo: SH
-  data-source-proxy-mode: AT
+  data-source-proxy-mode: AT # 数据源代理模式，AT模式
 mybatis-plus:
   global-config:
     db-config:
